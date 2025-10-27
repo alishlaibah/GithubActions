@@ -36,7 +36,7 @@ public class Addition
 	[TestMethod]
 	public void Multiply_Valid_Shlaibah()
 	{
-		Assert.AreEqual(45, Program.Multiply("5", "7"));
+		Assert.AreEqual(35, Program.Multiply("5", "7"));
 	}
 
 	[TestMethod]
