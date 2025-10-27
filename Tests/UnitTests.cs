@@ -50,11 +50,5 @@ public class Addition
 	{
 		Assert.AreEqual(5, Program.Divide("10", "2"));
 	}
-	
-	[TestMethod]
-	public void Divide_Valid_Shlaibah_BROKEN_ON_PURPOSE()
-    {
-        Assert.AreEqual(6, Program.Divide("10", "2"));
-    }
 
 }
