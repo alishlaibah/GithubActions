@@ -26,4 +26,35 @@ public class Addition
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, "1"));
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, null));
 	}
+
+	[TestMethod]
+	public void Subtract_Valid_Shlaibah()
+	{
+		Assert.AreEqual(3, Program.Subtract("5", "2"));
+	}
+
+	[TestMethod]
+	public void Multiply_Valid_Shlaibah()
+	{
+		Assert.AreEqual(45, Program.Multiply("5", "7"));
+	}
+
+	[TestMethod]
+	public void Power_Valid_Shlaibah()
+	{
+		Assert.AreEqual(8, Program.Power("2", "3"));
+	}
+
+	[TestMethod]
+	public void Divide_Valid_Shlaibah()
+	{
+		Assert.AreEqual(5, Program.Divide("10", "2"));
+	}
+	
+	[TestMethod]
+	public void Divide_Valid_Shlaibah_BROKEN_ON_PURPOSE()
+    {
+        Assert.AreEqual(6, Program.Divide("10", "2"));
+    }
+
 }
